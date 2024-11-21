@@ -4,6 +4,8 @@ import PieChartIndicator from "./components/PieChartIndicator";
 import BigNumberIndicator from "./components/BigNumberIndicator";
 import EventMap from "./components/EventMap"; // Importa o mapa
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
+
 
 // Dados para os gráficos
 const pieData = [

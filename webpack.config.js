@@ -25,13 +25,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html', // Corrigido para apontar para a pasta correta
+      template: './index.html',
     }),
-  ],
+  ],  
   devServer: {
-    static: path.resolve(__dirname, 'public'),
+    static: [
+      {
+        directory: path.resolve(__dirname, 'public'), // Arquivos estáticos na pasta "public"
+      },
+    ],
     port: 3000,
-  },
+  },  
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
   },
